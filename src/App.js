@@ -27,9 +27,18 @@ function App() {
     { msg: "Very doubtful.", color: "red" },
   ]
 
+  let colTracker = {
+    "green": 0,
+    "goldenrod": 0,
+    "red": 0
+  }
+  ;
+
+
   return (
     <div className="App">
-      <EightBall answers = {answers} />
+      <EightBall answers = {answers}
+                  colTracker = {colTracker} />
     </div>
   );
 }
